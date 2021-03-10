@@ -1,0 +1,22 @@
+{
+  "name": "summonbot",
+  "version": "1.0.0",
+  "description": "This is the Summon Bot for Tigermoons community server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuzzyfurry069/summonbot.git"
+  },
+  "keywords": [
+    "Summoning"
+  ],
+  "author": "Fuzzy Wilson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fuzzyfurry069/summonbot/issues"
+  },
+  "homepage": "https://github.com/fuzzyfurry069/summonbot#readme"
+}
