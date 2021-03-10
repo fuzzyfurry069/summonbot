@@ -1,0 +1,30 @@
+const { MessageEmbed } = require(`discord.js`);\
+const config = require(`../../config`);
+const Command = require(`../../base/Command`);
+
+class  extends Command {
+    constructor(client){
+        super(client, {
+            name: ``,
+            aliases: [],
+            guildOnly: true,
+            nsfw: false,
+            ownerOnly: false,
+            enabled: true,
+            cooldown: 15,
+            dirname: __dirname,
+            botPermissions: [`SEND_MESSAGES`, `EMBED_LINKS`],
+            memberPermissions: [`SEND_MESSAGES`],
+        });
+    };
+
+    async run(client, message, args, botdb) {
+        await botdb.queryPromise(`SELECT * FROM server WHERE serverid = ${message.guild.id}`).then(async function(results){
+            if(results[0].embeds === 0) {
+                //
+            };
+        });
+    };
+};
+
+module.exports = ;
